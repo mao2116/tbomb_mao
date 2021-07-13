@@ -43,7 +43,7 @@
 
 ***OPEN TERMINAL AND TYPE:***
 
-* `cd MCRYPT`
+* `cd tbomb_mao`
 
 * `python tbomb.mao`
 
