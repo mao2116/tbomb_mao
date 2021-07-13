@@ -43,9 +43,9 @@
 
 ***OPEN TERMINAL AND TYPE:***
 
-cd MCRYPT
+* `cd MCRYPT`
 
-python tbomb.mao
+* `python tbomb.mao`
 
 
 
