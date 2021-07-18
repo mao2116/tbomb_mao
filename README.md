@@ -55,7 +55,9 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!<b/><i/>
 </br>
 <h3>[ ! ] TASTED ON TERMUX [ ! ]
 </br>
-[] YOU CAN USE IT ANY KIND OF TERMINAL []
+</br>
+</br>
+[ ] YOU CAN USE IT ANY KIND OF TERMINAL [ ]
 <h3/>
 
 
