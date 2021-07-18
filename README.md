@@ -3,6 +3,11 @@
 <a href="https://www.maocommunity.blogspot.com">MCRYPT</a>
   
   </h2>
+</br>
+<i><b>THIS IS A SMS,CALL AND MAIL BOMBING TOOL,.
+IT 100% WORKING NOW,! YOU CAN SEND BULK SMS AND CALL UNLIMITED,!
+YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!<b/><i/>
+</br>
 <p align="center">
 <b> AUTHER </b>
 </p>
@@ -47,6 +52,11 @@
 
 * `python tbomb.mao`
 
+</br>
+<h3>[ ! ] TASTED ON TERMUX [ ! ]
+</br>
+[] YOU CAN USE IT ANY KIND OF TERMINAL []
+<h3/>
 
 
 <b>
