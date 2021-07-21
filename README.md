@@ -4,9 +4,9 @@
   
   </h2>
 </br>
-<i><b>THIS IS A SMS,CALL AND MAIL BOMBING TOOL,.
+<b><i>THIS IS A SMS,CALL AND MAIL BOMBING TOOL,.
 IT 100% WORKING NOW,! YOU CAN SEND BULK SMS AND CALL UNLIMITED,!
-YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!<b/><i/>
+YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 </br>
 <p align="center">
 <b> AUTHER </b>
@@ -55,15 +55,14 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!<b/><i/>
 </br>
 <h3>[ ! ] TASTED ON TERMUX [ ! ]
 </br>
-</br>
-</br>
-[ ] YOU CAN USE IT ANY KIND OF TERMINAL [ ]
+ <h4>YOU CAN USE IT ANY KIND OF TERMINAL<h4/>
 <h3/>
 
 
 <b>
 [ ! ] USER & PASS [ ! ]
-
+</br>
+</br>
 <p align="center">
 <a href="https://www.facebook.com/mAoVirUs2116/">
   <img width="50px" height="50px" src="https://raw.githubusercontent.com/fh-rabbi/Hack-Box/main/images/fb.png"><!I JUST USE A PIC FROM FH-RABBI >
@@ -71,7 +70,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!<b/><i/>
 </p>  
 
 </b>
-<b> Mao2116 <b/>
+<b> Mao2116 </b>
 
 ## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
