@@ -202,7 +202,7 @@ if maoversys:
   pass 
 else:
   print('[ ! ]UPDATE YOUR TERMUX [ ! ]')
-  os.system('xdg-opeb https://f-droid.org/repo/com.termux_117.apk')
+  os.system('xdg-open https://f-droid.org/repo/com.termux_117.apk')
   exit()
 try:
     from typing import List
