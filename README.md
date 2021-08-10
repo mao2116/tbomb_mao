@@ -26,7 +26,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 </p>  
 
   
-  
+#### THIS TOOL IS OPEN SOURCE FOR ONLY LEARNING NOT FOR MODIFY.
 ## INSTALLATION  :
 
 * `apt-get update -y`
@@ -66,8 +66,8 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 <p align="center">
 <a href="https://www.facebook.com/mAoVirUs2116/">
   <img width="50px" height="50px" src="https://raw.githubusercontent.com/fh-rabbi/Hack-Box/main/images/fb.png"><!I JUST USE A PIC FROM FH-RABBI >
-</a>
-</p>  
+<a/>
+<p/>  
 
 </b>
 <b> Mao2116 </b>
