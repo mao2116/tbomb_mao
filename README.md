@@ -50,7 +50,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 * `cd tbomb_mao`
 
-* `python tbomb.mao`
+* `python tbomb.py`
 
 </br>
 <h3>[ ! ] TASTED ON TERMUX [ ! ]
