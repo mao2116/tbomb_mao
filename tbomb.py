@@ -16,7 +16,7 @@ import re
 import time
 import argparse
 from pkg_resources import resource_string   
-maoversys=sys.version=='3.9.6 (default, Aug  8 2021, 22:47:03) \n[Clang 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489'
+maoversys='3.9.6' in sys.version
 print("\033[1;00m")
 try:
     import mechanize
