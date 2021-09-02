@@ -26,7 +26,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 </p>  
 
   
-#### THIS TOOL IS OPEN SOURCE FOR ONLY LEARNING NOT FOR MODIFY.
+#### THIS TOOL IS OPEN SOURCE FOR ONLY LEARNING NOT FOR COPY.
 ## INSTALLATION  :
 
 * `apt-get update -y`
@@ -42,7 +42,9 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 ## ONE CLICK INSTALLATION :
 * `apt-get update -y && pkg install python -y && pip install requests && pip install mechanize && pkg install git -y && git clone https://github.com/mao2116/tbomb_mao && cd tbomb_mao`
-##OR
+
+
+## OR
 
 ## FOR BATTER EXPERIENCE (RECOMMENDED): 
 
