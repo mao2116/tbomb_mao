@@ -1,6 +1,6 @@
 
 <h2 align="center">
-<a href="https://www.maocommunity.blogspot.com">TBOMB_MAO</a>
+<a href="https://maocommunity.blogspot.com/?m=1">TBOMB_MAO</a>
   
   </h2>
 </br>
