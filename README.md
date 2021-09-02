@@ -42,7 +42,11 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 ## ONE CLICK INSTALLATION :
 * `apt-get update -y && pkg install python -y && pip install requests && pip install mechanize && pkg install git -y && git clone https://github.com/mao2116/tbomb_mao && cd tbomb_mao`
+##OR
 
+## FOR BATTER EXPERIENCE (RECOMMENDED): 
+
+* `cd ; rm -rf tbomb_mao ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
 
 ## FOR ANY TIME RUN :
 
@@ -50,7 +54,22 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 * `cd tbomb_mao`
 
-* `python tbomb.py`
+* `python tbomb.py --bombing <BOMBING TYPE> `
+
+***SMS BOMBING***
+
+* `python tbomb.py --bombing sms --cc <COUNTRY CODE> --number <NUMBER> --threat <BIMBING LIMIT>`
+
+***SMS AND CALL BOMBING***
+
+* `python tbomb.py --bombing sms_call --cc <COUNTRY CODE> --number <NUMBER> --threat <BIMBING LIMIT>`
+
+***EXAMPLE***
+
+* `python tbomb.py --bombing sms_call --cc 880 --number 01777777777 --threat 1000`
+
+## FOR HELP
+* `python tbomb.py -h`
 
 </br>
 <h3>[ ! ] TASTED ON TERMUX [ ! ]
@@ -60,7 +79,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 
 <b>
-[ ! ] USER & PASS [ ! ]
+
 </br>
 </br>
 <p align="center">
