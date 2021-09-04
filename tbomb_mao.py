@@ -25,7 +25,7 @@ try:
       cc=input('ENTER COUNTRY CODE (WITH OUT +):')
       number=input('ENTER NUMBER :')
       threat=input('ENTER BOMBING LIMIT(MAX=1000) :')
-      os.system(f'python tbomb.py --cc {cc} --number {number} --threat {threat}')
+      os.system(f'python tbomb.py --bombing sms --cc {cc} --number {number} --threat {threat}')
       break
     elif mao=="2":
       os.system('clear')
