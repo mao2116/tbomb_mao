@@ -32,7 +32,7 @@ from core.user_agents import user_agent
 from core.logos import logomao
 from core.logos import *
 
-maoversys="3.9.6" in sys.version
+maoversys="3" in sys.version
 
 
 import requests,time,os,requests,sys,random,json ,smtplib
@@ -43,7 +43,7 @@ def authermao():
 
 
 def autherthbd():
-  os.system('https://www.facebook.com/Termux.Hacker.Bd.Official/')
+  os.system('xdg-open https://www.facebook.com/Termux.Hacker.Bd.Official/')
 def clr():
   os.system("clear")
 
@@ -55,7 +55,7 @@ if maoversys:
   pass 
 else:
   print('[ ! ]UPDATE YOUR TERMUX [ ! ]')
-  os.system('xdg-opeb https://f-droid.org/repo/com.termux_117.apk')
+  os.system('xdg-open https://f-droid.org/repo/com.termux_117.apk')
   exit()
 try:
     from typing import List
