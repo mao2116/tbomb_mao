@@ -1,5 +1,5 @@
 #coding=utf-8
-##BORO VAI TUMI JODI API KHUJTE ASHE TOBE WELCOME 
+##BORO VAI TUMI JODI API KHUJTE ASHO TOBE WELCOME 
 # ASSALAMUALAIKUM
 # THIS IS A BANGLADESHI PROGRAMMER
 ##########################################################
@@ -35,7 +35,7 @@ from core.logos import *
 maoversys="3.9.6" in sys.version
 
 
-import requests,time,os,mechanize,requests,sys,random,json ,smtplib
+import requests,time,os,requests,sys,random,json ,smtplib
 os.system('clear')
 agents = user_agent
 def authermao():
