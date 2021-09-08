@@ -30,28 +30,44 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 ## SUPPORTED ANY COUNTRY,. JUST ENTER YOU COUNTRY CODE WITH OUT +
 
-## INSTALLATION  :
+## INSTALLATION (OLD AND SLOW):
 
 * `apt-get update -y`
 * `apt-get upgrade -y`
 * `pkg install git -y`
 * `pkg install python -y`
 * `pip install requests`
-* `pip install mechanize`
-* ` git clone https://github.com/mao2116/tbomb_mao`
+* `git clone https://github.com/mao2116/tbomb_mao`
 * `cd tbomb_mao`
 * `ls`
 
 
-## ONE CLICK INSTALLATION :
-* `apt-get update -y && pkg install python -y && pip install requests && pip install mechanize && pkg install git -y && git clone https://github.com/mao2116/tbomb_mao && cd tbomb_mao`
+## ONE CLICK INSTALLATION (OLD AND SLOW):
+* `apt-get update -y && pkg install python -y && pip install requests && pkg install git -y && git clone https://github.com/mao2116/tbomb_mao && cd tbomb_mao`
 
 
-## OR
 
 ## FOR BATTER EXPERIENCE (RECOMMENDED): 
 
-* `cd ; rm -rf tbomb_mao ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
+## INSTALLATION [ ] :
+
+* `apt-get update -y`
+* `pkg install curl -y`
+* `pkg install python -y`
+* `pip install requests`
+* `curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip`
+* `unzip mao.zip ; rm -rf mao.zip`
+* `mv tbomb_mao-main tbomb_mao`
+
+## ONE CLICK INSTALLATION :
+
+
+* `apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
+
+
+## FOR UPDATE TOOL ():
+
+* `cd ; rm -rf tbomb_mao ; apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
 
 ## FOR ANY TIME RUN :
 
@@ -98,7 +114,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 <p/>  
 
 </b>
-<b> Mao2116 </b>
+<b> mao2116 </b>
 
 ## WARNING : 
 ***This tool is only for educational purpose. If you use this tool for other purposes except education we will not be responsible in such cases.***
