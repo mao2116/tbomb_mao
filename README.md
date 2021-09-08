@@ -26,7 +26,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 </p>  
 
   
-#### THIS TOOL IS OPEN SOURCE FOR ONLY LEARNING NOT FOR COPY.
+#### THIS TOOL IS OPEN SOURCE FOR ONLY LEARNING PATH NOT FOR COPY.
 
 ## SUPPORTED ANY COUNTRY,. JUST ENTER YOU COUNTRY CODE WITH OUT +
 
@@ -69,7 +69,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 * `cd ; rm -rf tbomb_mao ; apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
 
-## FOR ANY TIME RUN :
+## FOR RUN THIS TOOL :
 
 ***OPEN TERMINAL AND TYPE:***
 
