@@ -32,7 +32,7 @@ from core.user_agents import user_agent
 from core.logos import logomao
 from core.logos import *
 
-maoversys="3" in sys.version
+maoversys=int(sys.version_info[0])==3
 
 
 import requests,time,os,requests,sys,random,json ,smtplib
@@ -54,8 +54,7 @@ def logomain2():
 if maoversys:
   pass 
 else:
-  print('[ ! ]UPDATE YOUR TERMUX [ ! ]')
-  os.system('xdg-open https://f-droid.org/repo/com.termux_117.apk')
+  print('[ ! ] USE PYTHON VERSION 3.6+ [ ! ]')
   exit()
 try:
     from typing import List
