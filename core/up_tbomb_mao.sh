@@ -67,14 +67,15 @@ update(){
   echo
   echo -e "${g} NOW YOUR TOOL UPDATED."
   echo
-  echo -e "${y} THANKS FOR UPDATE ME"
+  echo -e "${y} THANKS FOR UPDATE ME."
   echo
-  echo -e "${g} NOW TYPE"
+  echo -e "${g}<==> NOW TYPE <==>"
   echo
   echo -e "${b} cd ; cd tbomb_mao ; python tbomb_mao.py${n}" ;
 }
 update
-
+echo 
+echo
 
 
 
