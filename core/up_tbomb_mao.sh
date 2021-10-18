@@ -72,6 +72,9 @@ update(){
   echo -e "${g}<==> NOW TYPE <==>"
   echo
   echo -e "${b} cd ; cd tbomb_mao ; python tbomb_mao.py${n}" ;
+  sleep 3
+
+
 }
 update
 echo 
