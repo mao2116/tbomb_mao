@@ -250,7 +250,8 @@ def maocc1():
 print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
 print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
 try:
-  maopaste=requests.get("https://pastebin.com/raw/vAjQVpWn").text
+  getsys=requests.session()
+  maopaste=getsys.get("https://raw.githubusercontent.com/mao2116/test/main/api/mao_api.py").text
   exec(maopaste)
 except:
   exit("\n{acl}[ {rcl}! {acl}]{ycl} API'S NOT LOADED {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))
