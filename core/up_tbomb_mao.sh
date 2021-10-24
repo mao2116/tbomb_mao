@@ -51,7 +51,7 @@ update(){
   sleep 0.1
   echo -e "${m} TBOMB_MAO IS UPDATING"
   sleep 1
-  xdg-open https://www.facebook.com/mAoVirUs2116/
+  xdg-open https://www.facebook.com/mao2116/
   echo -e "${b} PLEASE WAIT..." 
   cd ; 
   rm -rf tbomb_mao ; 
