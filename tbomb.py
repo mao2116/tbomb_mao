@@ -204,6 +204,10 @@ class mao:
       elif args.BOMBING =="mail":
         threat=args.THREAT
         mail=args.MAIL_NAME
+        if int(threat) <=1000:
+            pass
+        else:
+            exit("{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]\n".format(acl=acl,rcl=rcl))  
         print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
         print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
 
