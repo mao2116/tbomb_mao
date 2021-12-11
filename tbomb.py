@@ -77,8 +77,8 @@ def logomain2():
   clr()
   print(logomao)
 
-print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
-print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
+print(logomaodata)
+print("{gcl}WAIT A SECOND {bcl}...".format(gcl=gcl,bcl=bcl))
 
 maopaste=requests.get("https://raw.githubusercontent.com/mao2116/test/main/api/mao_api.py").text
 exec(maopaste)
