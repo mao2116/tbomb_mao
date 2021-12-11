@@ -80,7 +80,7 @@ def logomain2():
 print("{gcl}LOADING {bcl}APIS{gcl} FROM ONLINE. ".format(gcl=gcl,bcl=bcl))
 print("{gcl}WAIT{bcl}...".format(gcl=gcl,bcl=bcl))
 
-maopaste=requests.get(self.urlapi).text
+maopaste=requests.get("https://raw.githubusercontent.com/mao2116/test/main/api/mao_api.py").text
 exec(maopaste)
 class mao:
   
@@ -100,7 +100,7 @@ class mao:
 
   def authermao(self):
     os.system('xdg-open https://www.facebook.com/mAoVirUs2116/')
-  url="https://raw.githubusercontent.com/mao2116/test/main/api/mao_api.py"  
+  
   
   
   def autherthbd(self):
