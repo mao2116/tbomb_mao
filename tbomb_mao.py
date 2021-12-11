@@ -17,6 +17,9 @@
 # THANKS TO ALLAH
 # WELCOME HOME
 #####################৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳৳################
+
+
+
 import sys, os
 acl='\033[1;30m'
 rcl='\033[1;31m'
@@ -33,6 +36,7 @@ except Exception as emao:
   exit("\n{acl}[ {rcl}FILE ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
 try:
   from core.logos import *
+  from core.ccchk import *
 except Exception as emao:
   exit("\n{acl}[ {rcl}FILE ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
   
@@ -40,9 +44,8 @@ manu="""
 {acl}[ {ycl}1. {acl}] {gcl}SMS_BOMBING
 {acl}[ {ycl}2. {acl}] {gcl}CALL AND SMS_BOMBING
 {acl}[ {ycl}3. {acl}] {gcl}EMAIL BOMBING
-{acl}[ {ycl}4. {acl}] {gcl}OUTLOOKMAIL BOMBING
-{acl}[ {ycl}5. {acl}] {gcl}MAO_VIRUS (FB PAGE)
-{acl}[ {ycl}6. {acl}] {gcl}THBD (FB GROUP)
+{acl}[ {ycl}4. {acl}] {gcl}MAO_VIRUS (FB PAGE)
+{acl}[ {ycl}5. {acl}] {gcl}THBD (FB GROUP)
 {acl}[ {rcl}0. {acl}] {rcl}EXIT
 """.format(acl=acl,gcl=gcl,ncl=ncl,rcl=rcl,ycl=ycl)
 try:
@@ -56,38 +59,66 @@ try:
     if mao=="1":
       os.system('clear')
       print(logomao)
-      cc=input('ENTER COUNTRY CODE (WITH OUT +):')
-      number=input('ENTER NUMBER :')
-      threat=input('ENTER BOMBING LIMIT(MAX=1000) :')
+      cc=input('{acl}>{mcl}>{acl}> {gcl}ENTER COUNTRY CODE {acl}:{ycl}'.format(acl=acl,mcl=mcl,gcl=gcl,ycl=ycl))
+      if cc.startswith("+"):
+        cc=cc.replace("+","")
+      else:
+        pass
+  
+      number=input('{acl}>{mcl}>{acl}>{gcl} ENTER NUMBER {acl}:{ycl}'.format(acl=acl,mcl=mcl,gcl=gcl,ycl=ycl))
+      get_phone_info(cc,number)
+      threat=input('{acl}>{mcl}>{acl}>{gcl} ENTER BOMBING LIMIT{acl}({pcl}MAX{acl}={gcl}1000{acl}) {acl}:{ycl}'.format(acl=acl,gcl=gcl,pcl=pcl,ycl=ycl,mcl=mcl))
+      if int(threat) <=1000:
+          pass
+      else:
+          exit("{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]\n".format(acl=acl,rcl=rcl))
       os.system('python tbomb.py --bombing sms --cc {cc} --number {number} --threat {threat}'.format(cc=cc,number=number,threat=threat))
+      
       break
     elif mao=="2":
       os.system('clear')
       print(logomao)
-      cc=input('ENTER COUNTRY CODE (WITH OUT +):')
-      number=input('ENTER NUMBER :')
-      threat=input('ENTER BOMBING LIMIT(MAX=1000) :')
+      cc=input('{acl}>{mcl}>{acl}> {gcl}ENTER COUNTRY CODE {acl}:{ycl}'.format(acl=acl,mcl=mcl,gcl=gcl,ycl=ycl))
+      if cc.startswith("+"):
+        cc=cc.replace("+","")
+      else:
+        pass
+  
+      number=input('{acl}>{mcl}>{acl}>{gcl} ENTER MAIL {acl}:{ycl}'.format(acl=acl,mcl=mcl,gcl=gcl,ycl=ycl))
+      get_phone_info(cc,number)
+      threat=input('{acl}>{mcl}>{acl}>{gcl} ENTER BOMBING LIMIT{acl}({pcl}MAX{acl}={gcl}1000{acl}) {acl}:{ycl}'.format(acl=acl,gcl=gcl,pcl=pcl,ycl=ycl,mcl=mcl))
+      if int(threat) <=1000:
+          pass
+      else:
+          exit("{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]\n".format(acl=acl,rcl=rcl))
       os.system('python tbomb.py --bombing sms_call --cc {cc} --number {number} --threat {threat}'.format(cc=cc,number=number,threat=threat))
       break
     elif mao =="3":
-      os.system('python tbomb.py --bombing email')
+      os.system('clear')
+      print(logomao)
+      mails=input('{acl}>{mcl}>{acl}>{gcl} ENTER MAIL {acl}:{ycl}'.format(acl=acl,mcl=mcl,gcl=gcl,ycl=ycl))
+      threat=input('{acl}>{mcl}>{acl}>{gcl} ENTER BOMBING LIMIT{acl}({pcl}MAX{acl}={gcl}1000{acl}) {acl}:{ycl}'.format(acl=acl,gcl=gcl,pcl=pcl,ycl=ycl,mcl=mcl))
+      if int(threat) <=1000:
+          pass
+      else:
+          exit("{acl}[{rcl} !{acl} ] {rcl}BOMBING LIMIT 1000 {acl}[{rcl} !{acl} ]\n".format(acl=acl,rcl=rcl))
+            
+      os.system('python tbomb.py --bombing mail --mail {mail} --threat {threat}'.format(mail=mails,threat=threat))
       break
+
     elif mao =="4":
-      os.system('python tbomb.py --bombing email')
-      break
-    elif mao =="5":
       os.system('xdg-open https://www.facebook.com/mAoVirUs2116/')
       break
-    elif mao=="6":
+    elif mao=="5":
       os.system('xdg-open https://www.facebook.com/groups/242589267650518/?ref=share')
       break
     elif mao=="0":
-      exit('[ ! ] THANKS FOR USING THIS TOOL [ ! ]')
+      exit('{acl}[{gcl} ! {acl}]{rcl} THANKS FOR USING THIS TOOL {acl}[ {gcl}!{acl} ]'.format(acl=acl,gcl=gcl,rcl=rcl))
     else:
-      print('{rcl}WRONG INPUT{ncl}'.format(rcl=rcl,ncl=ncl))
+      print('{acl}[{rcl} !{acl} ]{rcl} WRONG SELECTION {acl}[ {rcl}! {acl}]{ncl}'.format(acl=acl,rcl=rcl,ncl=ncl))
       time.sleep(1)
     
 except KeyboardInterrupt:
-  exit('\nABORTING...\n')
+  exit('\n{acl} [{rcl} !{acl} ]{rcl} ABORTING... {acl}[{rcl} !{acl} ]\n'.fornat(acl=acl,rcl=rcl))
 except Exception as emao:
   exit("\n{acl}[ {rcl} ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
