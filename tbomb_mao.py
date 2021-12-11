@@ -119,6 +119,6 @@ try:
       time.sleep(1)
     
 except KeyboardInterrupt:
-  exit('\n{acl} [{rcl} !{acl} ]{rcl} ABORTING... {acl}[{rcl} !{acl} ]\n'.fornat(acl=acl,rcl=rcl))
+  exit('\n{acl} [{rcl} !{acl} ]{rcl} ABORTING... {acl}[{rcl} !{acl} ]\n'.format(acl=acl,rcl=rcl))
 except Exception as emao:
   exit("\n{acl}[ {rcl} ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
