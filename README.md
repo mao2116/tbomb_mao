@@ -75,10 +75,6 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 * `cd tbomb_mao`
 
-* `python tbomb.py --bombing <BOMBING TYPE> `
-
-***OR***
-
 * `python tbomb_mao.py`
 
 ***SMS BOMBING***
