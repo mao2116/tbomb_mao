@@ -85,9 +85,9 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 * `python tbomb.py --bombing sms_call --cc <COUNTRY CODE> --number <NUMBER> --threat <BIMBING LIMIT>`
 
-***EXAMPLE***
+***EXAMPLE IN BD***
 
-* `python tbomb.py --bombing sms_call --cc 880 --number 01777777777 --threat 1000`
+* `python tbomb.py --bombing sms_call --cc 880 --number 01000000000 --threat 1000`
 
 ## FOR HELP
 * `python tbomb.py -h`
