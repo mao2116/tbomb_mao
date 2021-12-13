@@ -30,20 +30,6 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 ## SUPPORTED ANY COUNTRY,. JUST ENTER YOU COUNTRY CODE WITH OUT +
 
-## INSTALLATION (OLD AND SLOW):
-
-* `apt-get update -y`
-* `apt-get upgrade -y`
-* `pkg install git -y`
-* `pkg install python -y`
-* `pip install requests`
-* `git clone https://github.com/mao2116/tbomb_mao`
-* `cd tbomb_mao`
-* `ls`
-
-
-## ONE CLICK INSTALLATION (OLD AND SLOW):
-* `apt-get update -y && pkg install python -y && pip install requests && pkg install git -y && git clone https://github.com/mao2116/tbomb_mao && cd tbomb_mao`
 
 
 
@@ -91,6 +77,12 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 ## FOR HELP
 * `python tbomb.py -h`
+
+
+## ONE CLICK INSTALLATION (OLD AND SLOW):
+* `apt-get update -y && pkg install python -y && pip install requests && pkg install git -y && git clone https://github.com/mao2116/tbomb_mao && cd tbomb_mao`
+
+
 
 </br>
 <h3>[ ! ] TASTED ON TERMUX [ ! ]
