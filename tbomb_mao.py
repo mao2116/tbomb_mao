@@ -84,7 +84,7 @@ try:
       else:
         pass
   
-      number=input('{acl}>{mcl}>{acl}>{gcl} ENTER MAIL {acl}:{ycl}'.format(acl=acl,mcl=mcl,gcl=gcl,ycl=ycl))
+      number=input('{acl}>{mcl}>{acl}>{gcl} ENTER NUMBER {acl}:{ycl}'.format(acl=acl,mcl=mcl,gcl=gcl,ycl=ycl))
       get_phone_info(cc,number)
       threat=input('{acl}>{mcl}>{acl}>{gcl} ENTER BOMBING LIMIT{acl}({pcl}MAX{acl}={gcl}1000{acl}) {acl}:{ycl}'.format(acl=acl,gcl=gcl,pcl=pcl,ycl=ycl,mcl=mcl))
       if int(threat) <=1000:
