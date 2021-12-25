@@ -20,7 +20,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
   <b> TO REPORT ANY TYPE OF BUG OR PROBLEM </b>
 <p/>
 <p align="center">
-<a href="https://www.facebook.com/mAoVirUs2116/">
+<a href="https://www.facebook.com/mao2116/">
   <img width="50px" height="50px" src="https://raw.githubusercontent.com/fh-rabbi/Hack-Box/main/images/fb.png"><!I JUST USE A PIC FROM FH-RABBI >
 </a>
 </p>  
@@ -96,7 +96,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 </br>
 </br>
 <p align="center">
-<a href="https://www.facebook.com/mAoVirUs2116/">
+<a href="https://www.facebook.com/mao2116/">
   <img width="50px" height="50px" src="https://raw.githubusercontent.com/fh-rabbi/Hack-Box/main/images/fb.png"><!I JUST USE A PIC FROM FH-RABBI >
 <a/>
 <p/>  
