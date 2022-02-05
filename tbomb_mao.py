@@ -107,7 +107,7 @@ try:
       break
 
     elif mao =="4":
-      os.system('xdg-open https://www.facebook.com/mAoVirUs2116/')
+      os.system('xdg-open https://www.facebook.com/mao2116/')
       break
     elif mao=="5":
       os.system('xdg-open https://www.facebook.com/groups/242589267650518/?ref=share')
