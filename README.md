@@ -8,6 +8,8 @@
 IT 100% WORKING NOW,! YOU CAN SEND BULK SMS AND CALL UNLIMITED,!
 YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 </br>
+</br>
+
 <p align="center">
 <b> AUTHER </b>
 </p>
@@ -15,27 +17,20 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 <a href="https://github.com/mao2116">
   <img width="50px" height="50px" src="https://raw.githubusercontent.com/fh-rabbi/Hack-Box/main/images/git.png">
 </a>
-</p>
-  <p align="center">
-  <b> TO REPORT ANY TYPE OF BUG OR PROBLEM </b>
-<p/>
-<p align="center">
 <a href="https://www.facebook.com/mao2116/">
   <img width="50px" height="50px" src="https://raw.githubusercontent.com/fh-rabbi/Hack-Box/main/images/fb.png"><!I JUST USE A PIC FROM FH-RABBI >
-</a>
-</p>  
+</a></p>
 
   
 #### THIS TOOL IS OPEN SOURCE FOR ONLY LEARNING PATH NOT FOR COPY.
 
-## SUPPORTED ANY COUNTRY,. JUST ENTER YOU COUNTRY CODE WITH OUT +
+##### JUST ENTER YOUR COUNTRY CODE !
 
 
 
 
-## FOR BATTER EXPERIENCE (RECOMMENDED): 
 
-## INSTALLATION [ ] :
+### INSTALLATION [ RECOMMENDED ] :
 
 * `apt-get update -y`
 * `pkg install curl -y`
@@ -45,17 +40,15 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 * `unzip mao.zip ; rm -rf mao.zip`
 * `mv tbomb_mao-main tbomb_mao`
 
-## ONE CLICK INSTALLATION :
+### ONE CLICK INSTALLATION :
 
 
 * `apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
 
 
-## FOR UPDATE TOOL ():
 
-* `cd ; rm -rf tbomb_mao ; apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
 
-## FOR RUN THIS TOOL :
+### FOR RUN THIS TOOL :
 
 ***OPEN TERMINAL AND TYPE:***
 
@@ -79,16 +72,22 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 * `python tbomb.py -h`
 
 
-## ONE CLICK INSTALLATION (OLD AND SLOW):
+
+### FOR UPDATE TOOL ():
+
+* `cd ; rm -rf tbomb_mao ; apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
+
+
+
+### ONE CLICK INSTALLATION (OLD AND SLOW):
 * `apt-get update -y && pkg install python -y && pip install requests && pkg install git -y && git clone https://github.com/mao2116/tbomb_mao && cd tbomb_mao`
 
 
 
-</br>
-<h3>[ ! ] TASTED ON TERMUX [ ! ]
-</br>
- <h4>YOU CAN USE IT ANY KIND OF TERMINAL<h4/>
-<h3/>
+
+<h3>[ ! ] TASTED ON TERMUX [ ! ]<h3/>
+<h4>YOU CAN USE IT ANY KIND OF TERMINAL<h4/>
+
 
 
 <b>
