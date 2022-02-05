@@ -99,7 +99,7 @@ class mao:
     exit("\n{acl}[ {rcl}! {acl}]{ycl} THANKS FOR USE THIS TOOL {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl))    
 
   def authermao(self):
-    os.system('xdg-open https://www.facebook.com/mAoVirUs2116/')
+    os.system('xdg-open https://www.facebook.com/mao2116/')
   
   
   
