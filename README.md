@@ -40,7 +40,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 ### ONE CLICK INSTALLATION :
 
 
-* `apt-get update -y ; apt-get upgrade -y ; apt install python git -y ;pip install requests;git clone --depth=1 https://github.com/mao2116/tbomb_mao`
+* `apt-get update -y ; apt-get upgrade -y ; apt install python git -y ; pip install requests ; git clone --depth=1 https://github.com/mao2116/tbomb_mao`
 
 
 
@@ -72,7 +72,7 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 ### FOR UPDATE TOOL ():
 
-* `cd ; rm -rf tbomb_mao ; apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
+* `cd ; rm -rf tbomb_mao ; apt-get update -y ; apt-get upgrade -y ; apt install python3 git -y ; pip install requests ; git clone --depth=1 https://github.com/mao2116/tbomb_mao`
 
 
 
