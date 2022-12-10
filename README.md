@@ -33,17 +33,14 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 ### INSTALLATION [ RECOMMENDED ] :
 
 * `apt-get update -y`
-* `pkg install curl -y`
-* `pkg install python -y`
+* `apt-get upgrade -y`
+* `apt install python git -y`
 * `pip install requests`
-* `curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip`
-* `unzip mao.zip ; rm -rf mao.zip`
-* `mv tbomb_mao-main tbomb_mao`
-
+* `git clone --depth=1 https://github.com/mao2116/tbomb_mao`
 ### ONE CLICK INSTALLATION :
 
 
-* `apt update ; apt install python -y ; apt install curl -y ; pip install requests ; curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; unzip mao.zip ; rm -rf mao.zip ; mv tbomb_mao-main tbomb_mao`
+* `apt-get update -y ; apt-get upgrade -y ; apt install python git -y ;pip install requests;git clone --depth=1 https://github.com/mao2116/tbomb_mao`
 
 
 
