@@ -79,9 +79,12 @@ def logomain2():
 
 print(logomaodata)
 print("{gcl}WAIT A SECOND {bcl}...".format(gcl=gcl,bcl=bcl))
-
-maopaste=requests.get("https://raw.githubusercontent.com/mao2116/test/main/api/mao_api.py").text
-exec(maopaste)
+if sys.version_info[1] == 11:
+    maopaste=requests.get("https://raw.githubusercontent.com/mao2116/test/main/api/mao_api.py").text
+    exec(maopaste)
+elif sys.version_info[1] == 9 or  sys.version_info[1] == 10:
+    maopaste=requests.get("https://raw.githubusercontent.com/mao2116/test/main/api/mao_api_old.py").text
+    exec(maopaste)
 class mao:
   
   def psb(self,z):
