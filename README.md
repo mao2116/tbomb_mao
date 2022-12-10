@@ -53,6 +53,13 @@ YOU CAN ALSO SEND MAIL,! WITH THIS TOOL.!</i></b>
 
 * `python tbomb_mao.py`
 
+
+<p align="left">
+  <a href="https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/mao2116/tbomb_mao.git&tutorial=README.md" target="_blank"><img src="https://gstatic.com/cloudssh/images/open-btn.svg"></a>
+</p>
+
+
+
 ***SMS BOMBING***
 
 * `python tbomb.py --bombing sms --cc <COUNTRY CODE> --number <NUMBER> --threat <BIMBING LIMIT>`
