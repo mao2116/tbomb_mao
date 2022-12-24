@@ -57,13 +57,9 @@ update(){
   rm -rf tbomb_mao ; 
   apt update ; 
   apt install python -y ; 
-  apt install curl -y ; 
-  pip install requests ; 
-  curl https://codeload.github.com/mao2116/tbomb_mao/zip/refs/heads/main --output mao.zip ; 
-  unzip mao.zip ; 
-  rm -rf mao.zip ; 
-  mv tbomb_mao-main tbomb_mao
-
+  apt install git -y ;
+  pip install requests ;
+  git clone --depth=1 https://github.com/mao2116/tbomb_mao
   echo
   echo -e "${g} NOW YOUR TOOL UPDATED."
   echo
