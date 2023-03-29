@@ -30,27 +30,17 @@ except:
   #TRYING TO DOWNLOAD REQUESTS FOR PYTHON2 AND PYTHON3 BOTH  
     os.system('pip install requests ; pip2 install requests')
 try:    
-  import json
   import os
   import sys
-  import subprocess
-  import string
-  import random
-  import json
-  import re
   import time
   import argparse
-  import json
-  import smtplib
 except Exception as emao:
   exit("\n{acl}[ {rcl}FILE ERROR TYPE : {acl}]{ycl}  {emao} {acl}[ {rcl}!{acl} ]{ncl}\n".format(acl=acl,rcl=rcl,ycl=ycl,ncl=ncl,emao=emao))
 try:
-  from pkg_resources import resource_string
   from core.user_agents import user_agent
   from core.logos import logomao
   from core.ccchk import *
   from core.logos import *
-  
 except Exception as emao:
   maoversys=sys.version_info[0]==3
   if maoversys:
@@ -74,7 +64,7 @@ os.system('clear')
 
 
 def logomain2():
-  clr()
+  os.system("clear")
   print(logomao)
 
 print(logomaodata)
@@ -116,12 +106,9 @@ class mao:
 
 
 
-  def main(self): 
-  
-     
-  
+  def main(self):
       logomao="""
-  \033[1;33m {bcl}V.1.{gcl}3{ycl} _   _ \033[1;36m ____  ____  \033[1;32m   ____   ___  __  __ \033[1;30mTHBD\033[0;00m  
+  \033[1;33m {bcl}V.1.{gcl}7{ycl} _   _ \033[1;36m ____  ____  \033[1;32m   ____   ___  __  __ \033[1;30mTHBD\033[0;00m  
   \033[1;33m|_   _| | | |\033[1;36m| __ )|  _ \ \033[1;32m  | __ ) / _ \|  \/  | __ ) 
   \033[1;33m  | | | |_| |\033[1;36m|  _ \| | | | \033[1;32m |  _ \| | | | |\/| |  _ \ 
   \033[1;33m  | | |  _  |\033[1;36m| |_) | |_| |\033[1;32m  | |_) | |_| | |  | | |_) |
@@ -132,7 +119,7 @@ class mao:
                         
                         
                     \033[1;30m[ \033[1;34mAUTHER \033[1;30m] \033[1;32mTERMUX \033[1;32mHACKER\033[1;31m BD
-                    \033[1;30m[\033[1;34m GITHUB\033[1;30m ] \033[1;34mMAO2116
+                    \033[1;30m[\033[1;34m GITHUB\033[1;30m ] \033[1;34mGITHUB.com/MAO2116
                     \033[1;30m[ \033[1;34mCODER  \033[1;30m] \033[1;30mMAO2116 
   \033[0;00m""".format(bcl=bcl,gcl=gcl,ycl=ycl)
       print(logomao)
