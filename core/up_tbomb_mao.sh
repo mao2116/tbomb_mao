@@ -61,11 +61,11 @@ update(){
   pip install requests ;
   git clone --depth=1 https://github.com/mao2116/tbomb_mao
   echo
-  echo -e "${g} NOW YOUR TOOL UPDATED."
+  echo -e "${g} NOW YOUR TOOL IS UPDATED."
   echo
   echo -e "${y} THANKS FOR UPDATE ME."
   echo
-  echo -e "${g}<==> NOW TYPE <==>"
+  echo -e "${g}<==> NOW JUST RUN THIS COMMAND <==>"
   echo
   echo -e "${b} cd ; cd tbomb_mao ; python tbomb_mao.py${n}" ;
   sleep 3
