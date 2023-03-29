@@ -44,8 +44,8 @@ manu="""
 {acl}[ {ycl}1. {acl}] {gcl}SMS_BOMBING
 {acl}[ {ycl}2. {acl}] {gcl}CALL AND SMS_BOMBING
 {acl}[ {ycl}3. {acl}] {gcl}EMAIL BOMBING
-{acl}[ {ycl}4. {acl}] {gcl}MAO_VIRUS (FB PAGE)
-{acl}[ {ycl}5. {acl}] {gcl}THBD (FB GROUP)
+{acl}[ {ycl}4. {acl}] {gcl}MAO_COMMUNITY (FB PAGE)
+{acl}[ {ycl}5. {acl}] {gcl}TG ( MAO2116 )
 {acl}[ {rcl}0. {acl}] {rcl}EXIT
 """.format(acl=acl,gcl=gcl,ncl=ncl,rcl=rcl,ycl=ycl)
 try:
@@ -110,7 +110,7 @@ try:
       os.system('xdg-open https://www.facebook.com/mao2116/')
       break
     elif mao=="5":
-      os.system('xdg-open https://www.facebook.com/groups/242589267650518/?ref=share')
+      os.system('xdg-open https://t.me/maoCommunity')
       break
     elif mao=="0":
       exit('{acl}[{gcl} ! {acl}]{rcl} THANKS FOR USING THIS TOOL {acl}[ {gcl}!{acl} ]'.format(acl=acl,gcl=gcl,rcl=rcl))
